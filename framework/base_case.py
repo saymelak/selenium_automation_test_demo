@@ -18,7 +18,7 @@ class BaseCase(unittest.TestCase):
 
         base_url = Config.base_url
         if sys.platform == 'darwin':
-            driver = webdriver.Chrome('lib/chromedriver')
+            driver = webdriver.Chrome()
         if sys.platform == 'win32':
             driver = webdriver.Chrome('lib/chromedriver.exe')
 
